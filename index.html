@@ -111,11 +111,42 @@ h1{font-size:clamp(46px,10vw,86px);letter-spacing:5px;line-height:1;margin:0;tex
 .heart{color:var(--red2)}
 
 @media(max-width:700px){
-  .sheet{grid-template-columns:1fr;padding:25px}
-  .profile{grid-template-columns:1fr;gap:30px}
-  .dossier{padding:25px}
-  .spec{grid-template-columns:1fr;gap:5px}
-  .dossier-head{align-items:start;flex-direction:column}
+  section { padding: 40px 15px; }
+  
+  /* Ajustes da área do convite (.sheet) */
+  .sheet {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 20px 15px;
+  }
+  
+  /* Ajuste da carta amarelada (.note) */
+  .note {
+    padding: 24px 18px;
+    transform: rotate(0deg);
+  }
+  .note h2 { font-size: 24px; margin-bottom: 18px; }
+  .note p { font-size: 14px; line-height: 1.7; }
+  
+  /* Ajuste do lado direito (.side) */
+  .side h2 { 
+    font-size: 26px; 
+    margin-bottom: 12px; 
+  }
+  .side p { font-size: 13px; }
+  
+  /* Tabela de informações */
+  .row { font-size: 9px; padding: 10px 0; }
+  
+  /* Botões adaptados para toque no telemóvel */
+  .actions { flex-direction: column; gap: 12px; }
+  .btn { width: 100%; text-align: center; padding: 14px 15px; }
+  
+  /* Ajustes da ficha confidencial (.profile) */
+  .profile { grid-template-columns: 1fr; gap: 25px; padding-top: 20px; }
+  .dossier { padding: 20px 15px; }
+  .dossier-head { align-items: start; flex-direction: column; gap: 10px; }
+  .spec { grid-template-columns: 1fr; gap: 4px; padding: 12px 0; }
 }
 </style>
 <script>
